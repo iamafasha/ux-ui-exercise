@@ -1,0 +1,63 @@
+/* General  */
+
+img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 100%;
+}
+
+
+/* Header */
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    background: hsl(198deg 90% 48%);
+    color: white;
+    height: 90px;
+    padding: 0px 2%;
+}
+
+.header-container>.left, .header-container>.right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-header-nav{
+    justify-self: start;
+}
+
+.main-header-nav>ul, .header-custom-menu>ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 140%;
+    padding: unset;
+    margin: unset;
+}
+
+
+/* Logo brand */
+.main-header .left .brand{
+    display: block;
+    height: 70px;
+    width: 70px;
+}
+
+/* Profile photo */
+
+.main-header .right .header-custom-menu .profile-pic{
+    height: 65px;
+    width: 65px;
+}
+
+
+/* Breadcrumbs */
+
+.breadcrumbs>ul{
+    display: flex;
+    list-style: none;
+}
