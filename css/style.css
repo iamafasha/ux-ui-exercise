@@ -53,6 +53,7 @@ img{
     font-size: 140%;
     padding: unset;
     margin: unset;
+    font-size: 1.2em;
 }
 
 
@@ -63,17 +64,264 @@ img{
     width: 70px;
 }
 
+/* main-header-nav */
+.main-header-nav{
+    /* padding: 0px 9%; */
+}
+
+.main-header-nav>ul{
+ padding: 0px 13%;  
+}
+
+.main-header-nav>ul>li{
+    padding:0px  7%;
+}
+
+
+
+/* Right side */
+.main-header .right>*{
+    padding: 0 20px;
+}
+
+/* Search */
+.main-header .right>.header-search-bar{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-header .right>.header-search-bar>.in-search-input{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    left: 12%;
+}
+
+.main-header .right>.header-search-bar>input{
+    position: relative;
+    left: 0px;
+    background: rgba(255, 255, 255, 0.384);
+    border-radius: 05px;
+    border: unset;
+    padding: 5%;
+    padding-left: 45px;
+    font-size: 1.1em;
+}
+
+.main-header .right>.header-search-bar>input::placeholder{
+    color: white;
+    font-weight: lighter;
+}
+
+
+/* Header Custom Menu */
+
+.main-header .right>.header-custom-menu>ul>li{
+    padding: 0px 16px;
+}
+
+/*  */
+
 /* Profile photo */
 
 .main-header .right .header-custom-menu .profile-pic{
-    height: 65px;
-    width: 65px;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 
 /* Breadcrumbs */
 
+.breadcrumbs{
+    color: rgba(128, 128, 128);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.445);
+    font-weight: bold;
+    font-size: 1.2em;
+    font-smooth: always;
+}
 .breadcrumbs>ul{
     display: flex;
     list-style: none;
+    height: 100%;
+    padding: unset;
+    margin: unset;
+}
+
+
+.breadcrumbs>ul>li{
+    height: 100%;
+    position: relative;
+    display: block;
+    padding: 20px 40px;
+    /* border: 1px solid salmon; */
+}
+
+
+.breadcrumbs>ul>li:nth-child(2){
+    /* background: salmon; */
+}
+
+.breadcrumbs>ul>li:not(:first-child)::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 3px;
+    background: rgba(128, 128, 128, 0.445);
+    transform: skew(45deg);
+}
+
+.breadcrumbs>ul>li:not(:first-child):after{
+  content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    width: 3px;
+    background: rgba(128, 128, 128, 0.445);
+    transform: skew(-45deg);
+}
+
+/* .breadcrumbs>ul>li::after,
+.breadcrumbs>ul>li::before{
+    content: unset;
+} */
+
+
+
+/* Content */
+
+
+.content{
+    margin: 0px auto;
+
+}
+
+.content>.content-wrapper{
+    width: 40%;
+    margin: auto;
+}
+
+
+/* Form */
+
+.form-group{
+}
+
+.form-group.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group.row input{
+    flex-grow: 1;
+    margin-right:2%;
+}
+
+
+.form-group label{
+    display: block;
+    margin:8px auto;
+    padding-top: 14px;
+}
+
+.form-group input, .form-group textarea{
+    display: block;
+    padding: 12px 9px;
+    background-color: white;
+    color: black;
+    border-style:solid;
+    border:none;
+    border:2px solid #ccc7;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 100%;
+}
+.form-modal .members{
+    padding:2vh 0px ;
+}
+
+
+/* Member List */
+.member-list {
+    list-style: none;
+    padding: unset;
+    margin: unset;
+}
+
+.member-list .member .wrapper{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #ccc7;
+    padding: 1% 2%;
+}
+
+
+.member-list .member .wrapper .avatar{
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 2%;
+}
+
+
+
+/* Privacy  */
+
+.form-modal.privacy{
+    
+}
+
+
+.form-modal.privacy ul{
+    list-style: none;
+    padding: unset;
+    margin: unset;
+}
+
+
+
+
+.form-modal.privacy ul .form-check .form-check-label{
+    display: flex;
+    padding: 3% 1%;
+    border: 1px solid #ccf;
+
+}
+
+.form-modal.privacy ul>li:first-child .form-check .form-check-label{
+    border-radius:5px  5px 0px 0px;
+
+}
+
+.form-modal.privacy ul>li:last-child .form-check .form-check-label{
+    border-radius: 0px 0px 5px  5px;
+}
+
+
+.form-modal.privacy ul .form-check .form-check-label .info{
+    padding: 0px 1%;;
+}
+
+/* Button group */
+
+.btn-group{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1% 0px;
+}
+
+.btn-group button{
+    margin:0px 1%;
+}
+
+.btn-group button:last-child{
+    margin-right: unset;
 }
