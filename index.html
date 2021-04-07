@@ -51,7 +51,7 @@
 
     <section class="content">
         <div class="content-wrapper">
-            <div>
+            <div class="heading">
                 <h2>Project Settings</h2>
                 <p>Lets Get started by filling in the information below to create your new project.</p>
             </div>
@@ -65,14 +65,14 @@
 
                     <div class="form-group">
                         <label for="">Description</label>
-                        <textarea class="form-control" name="" id="" rows="3"></textarea>
+                        <textarea  class="form-control" name="" id="" rows="5"></textarea>
                     </div>
 
                     <div class="form-modal add-members">
                         <label >Add Team Members</label>
                         <div class="form-group row">
                           <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="">
-                          <button><i class="fa fa-plus" aria-hidden="true">Add</i></button>
+                          <button><i class="fa fa-plus" aria-hidden="true"></i> Add</button>
                         </div>
 
                         <div class="members">
@@ -116,10 +116,14 @@
                         <div>
                             <ul>
 
-                                <li>
+                                <li class="active">
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                        <input type="radio" class="form-check-input" name="test" id="" value="checkedValue" >
+                                            <label class="custom-radio-container">
+                                                <input type="radio" checked="checked" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+
                                             <div class="info">
                                                 <div class="heading">Public access</div>
                                                 <div class="description">This project would be accessible to anyone who has the link</div>
@@ -133,7 +137,10 @@
                                 <li>
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                        <input type="radio" class="form-check-input" name="test" id="" value="checkedValue" >
+                                            <label class="custom-radio-container">
+                                                <input type="radio"  name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
                                             <div class="info">
                                                 <div class="heading">Private to Project Members</div>
                                                 <div class="description">Only members of this project would be able to access</div>
@@ -146,7 +153,10 @@
                                 <li>
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                        <input type="radio" class="form-check-input" name="test" id="" value="checkedValue" >
+                                            <label class="custom-radio-container">
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
                                             <div class="info">
                                                 <div class="heading">Private to you</div>
                                                 <div class="description">You are the only one able to access this project</div>
@@ -166,8 +176,8 @@
                     </div>
 
                     <div class="btn-group" role="group" aria-label="">
-                        <button type="button" class="btn btn-primary">Cancel</button>
-                        <button type="button" class="btn btn-info">Create this project</button>
+                        <button type="button" class="btn ">Cancel</button>
+                        <button type="button" class="btn btn-primary">Create this project</button>
                     </div>
 
                 </form>
